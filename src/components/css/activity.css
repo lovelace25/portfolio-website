@@ -1,0 +1,208 @@
+@import './globalColors.css';
+
+.active-activity{
+    margin-left: 6%;
+    width: 25%;
+    max-width: 25%;
+
+}
+
+.activity-nav{
+    width: 30%;
+    max-width: 30%;
+
+}
+
+.active-activity-pic{
+    padding:20px;
+    padding-left: 0;
+    max-width: 35%;
+    width: 35%;
+    position: relative;
+}
+
+
+.curtain-change{
+    position: absolute;
+    border-radius: 5px;
+    transition: all 300ms;
+    top: 19px;
+    left: 0;
+    width: calc(100% - 20px);
+    height: calc(100% - 40px);
+}
+
+.active-activity-pic img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px 5px rgba(14, 14, 14, 0.698);
+}
+
+.activity-title span{
+    color:var(--primary-light);
+    transition: all 500ms;
+    font-family: Nova Round;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.activity-title{
+    display: flex;
+    overflow: hidden;
+    max-height: 48px;
+    flex-direction: column;
+}
+
+.activity-lists{
+    position: relative;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 20px;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+}
+
+.activity-shadow{
+    position: absolute;
+    background-color: black;
+    top:-10px;
+    right: 0;
+    min-width: 50%;
+    min-height: 100%;
+    background: var(--primary-main);
+    background: linear-gradient(90deg, rgba(0,212,255,0) 4%, rgba(14, 14, 14, 0.946) 90%, rgb(14, 14, 14) 100%);
+}
+
+.activity-content{
+    padding-top: 20px;
+    color:var(--primary-light);
+    max-width: 90%;
+    min-height: 180px;
+    text-align: left;
+    word-spacing: 5px;
+    transition: all 300ms;
+    line-height: 1.4;
+}
+
+.activity-content p{
+    transition: all 300ms;
+}
+
+.activity-nav-icons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    justify-content: space-between;
+}
+
+.activity-nav-icons div{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    width: 12%;
+    min-height: 300px;
+}
+
+.activity-nav-icons div:hover button{
+    border: 2px solid var(--secondary-main);
+    color:var(--secondary-main);
+    box-shadow: 1px 1px 10px var(--secondary-main);
+}
+
+.justify-item-start{
+    justify-content: baseline;
+}
+
+.justify-item-end{
+    justify-content: end;
+}
+
+.activity-nav-icons button{
+    background-color: transparent;
+    max-width: 55px;
+    border-radius: 100%;
+    border: 2px solid #ffffff29;
+    color:#ffffff29;
+    transition: all 500ms;
+}
+
+.activity-nav-icons button:hover{
+    border: 2px solid var(--secondary-main);
+    color:var(--secondary-main);
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+}
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.square-box {
+    padding: 15px;
+}
+
+.activity-list-item {
+    position: relative;
+    transition: all 300ms;
+}
+
+.last-activity-message {
+    padding: 20px;
+}
+
+.last-activity-message span {
+    font-family: Nova Round;
+    font-size: 18px;
+    color: var(--primary-light);
+}
+
+.activity-list-item img{
+    max-height: 220px;
+    max-width: 250px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px rgba(14, 14, 14, 0.698);
+}
+
+.activity-list-item .overlay-text {
+    padding: 10px;
+    background-color: rgba(14, 14, 14, 0.345);
+    position: absolute;
+    top: 100px;
+    max-height: 75px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--primary-light);
+    transition: all 300ms;
+}
+
+.activity-list-item .overlay-text:hover {
+    background-color: rgba(14, 14, 14, 0.84);
+}
+
+.activity-list-item .overlay-text span{
+    font-size: 14px;
+    font-family: Nova Round;
+    font-weight: 600;
+}
+.activity-list-item .overlay-text p {
+    font-size: 12px;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
